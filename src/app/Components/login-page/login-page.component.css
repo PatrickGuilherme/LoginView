@@ -9,6 +9,7 @@ main {
     width: 100%;
     max-width: 500px; 
     min-height: 100vh;
+    max-height: 100vh;
     padding: clamp(35px,4%,70px);/*Cria uma medida minima, preferencial e maxima */
 }
 
@@ -27,11 +28,6 @@ main {
 .msgView {
     display: flex;
     flex-direction: column;
-}
-
-.msgView span {
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
 form{
