@@ -1,0 +1,112 @@
+main {
+    display: flex;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; 
+    min-height: 100vh;
+    padding: clamp(35px,4%,70px);/*Cria uma medida minima, preferencial e maxima */
+}
+
+.login_logo {
+    width: 160px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.login_title {
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+.msgView {
+    display: flex;
+    flex-direction: column;
+}
+
+.msgView span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+form{
+    width: 100%;
+}
+
+.login_label {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: var(--deep-grey);
+    padding: 15px 10px 15px;
+}
+
+.input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--blue);
+}
+
+.login_button {
+    width: 100%;
+    padding: 15px 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.login_button span {
+    color: white;
+    text-transform: uppercase;
+}
+
+.login_button:disabled {
+    cursor: auto;
+    background-color: var(--light-blue);
+    border: 2px solid var(--light-grey);
+}
+
+.login_button:disabled svg {
+    fill: var(--grey);
+}
+
+.login_link {
+    font-size: 0.8em;
+    text-decoration: none;
+    text-align: center;
+    color: var(--medium-grey);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.login_logo_senai{
+    width: 160px;
+    padding: 15px;
+}
+
+.wallpaper{
+    width: 100%;
+    background-image: url('../../../assets/wallpaper2.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}

@@ -1,1 +1,31 @@
-<p>login-page works!</p>
+<main>
+    <section class="login">
+        <img src="../../../assets/logo3.png" class="login_logo">
+    
+        <h1 class="login_title">Fazer login</h1>
+        <div class="alert alert-danger" style="width:100%" *ngIf="EmailInvalid() !== null || PasswordInvalid() !== null">
+            <div class="msgView">
+                <span *ngIf="EmailInvalid() !== null">{{ EmailInvalid() }}</span>
+                <span *ngIf="PasswordInvalid() !== null">{{ PasswordInvalid() }}</span>
+            </div>
+        </div>
+        
+        <form [formGroup]="LoginForm" (ngSubmit)="Login()">
+            <label class="login_label">
+                <input class="input" placeholder="E-mail do usuário" type="email" formControlName="email"/>
+            </label>
+        
+            <label class="login_label">
+                <input class="input" placeholder="Senha do usuário" type="password" formControlName="password"/>
+            </label>    
+        
+            <button type="button" class="login_button" [disabled]="!LoginForm.valid">
+                <span>entrar</span>
+            </button>
+        </form>
+                
+        <img src="../../../assets/logo2.png" class="login_logo_senai">
+    </section>
+
+    <section class="wallpaper"></section>
+</main>
