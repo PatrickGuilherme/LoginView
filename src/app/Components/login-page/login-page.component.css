@@ -63,7 +63,7 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue);
+    background-color: var(--red);
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -77,7 +77,7 @@ form{
 
 .login_button:disabled {
     cursor: auto;
-    background-color: var(--light-blue);
+    background-color: var(--light-red);
     border: 2px solid var(--light-grey);
 }
 
